@@ -1587,6 +1587,27 @@ body {
     padding: 48px 24px;
   }
 }
+/* ==========================================================================
+   RESPONSIVE GRID HELPERS
+   ========================================================================== */
+.grid-2-col {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+}
+.grid-3-col-mini {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+@media (max-width: 768px) {
+  .grid-2-col {
+    grid-template-columns: 1fr !important;
+  }
+  .grid-3-col-mini {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+}
 
 /* ==========================================================================
    CASE STUDY REDESIGN — NEW SECTION STYLES
